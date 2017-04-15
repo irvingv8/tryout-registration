@@ -25,6 +25,10 @@
 
 import axios from 'axios';
 
+// // Settings for Local
+// export const ROOT_URL = 'http://localhost:3003/api/v1.0';
+// const TRYOUT_CATEGORY = 41;
+
 // // Settings for Dev
 export const ROOT_URL = 'https://ss-core-dev.herokuapp.com/api/v1.0';
 const TRYOUT_CATEGORY = 41;

@@ -9,65 +9,98 @@ function TryoutForm(props) {
       <div className="row">
         <div className="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
           <div className="row">
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="firstName">First Name</label>
-                <Field name="firstName" className="form-control" component="input" type="text" />
+            <div className="col-xs-12">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="question1">For how long have you been playing?</label>
+                    <Field
+                      name="question1"
+                      placeholder="Years"
+                      className="form-control"
+                      component="input"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="lastName">What's your favorite team?</label>
+                    <Field
+                      name="question2"
+                      placeholder="Team"
+                      className="form-control"
+                      component="input"
+                      type="text"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="lastName">Last Name</label>
-                <Field name="lastName" className="form-control" component="input" type="text" />
+            <div className="col-xs-12">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="birthday">Where are you from?</label>
+                    <Field
+                      name="question3"
+                      placeholder="Country"
+                      className="form-control"
+                      component="input"
+                      type="birthday"
+                    />
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="nickname">&nbsp;</label>
+                    <Field
+                      name="question4"
+                      placeholder="City"
+                      className="form-control"
+                      component="input"
+                      type="nickname"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="birthday">Birthday</label>
-                <Field name="birthday" className="form-control" component="input" type="birthday" />
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="nickname">Nickname</label>
-                <Field name="nickname" className="form-control" component="input" type="nickname" />
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <Field name="email" className="form-control" component="input" type="email" />
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="documentImageUrl">Identitiy Document</label>
-                <Field
-                  name="documentImageUrl"
-                  className="form-control"
-                  component="input"
-                  type="documentImageUrl"
-                />
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="form-group">
-                <label htmlFor="favPlayer">Favorite Player</label>
-                <Field
-                  name="favPlayer"
-                  className="form-control"
-                  component="input"
-                  type="favPlayer"
-                />
+            <div className="col-xs-12">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="email">Another Question?</label>
+                    <Field
+                      name="question5"
+                      placeholder="Question"
+                      className="form-control"
+                      component="input"
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="form-group">
+                    <label htmlFor="documentImageUrl">Some more questions?</label>
+                    <Field
+                      name="question6"
+                      placeholder="Question"
+                      className="form-control"
+                      component="input"
+                      type="documentImageUrl"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <br/>
           <div className="row">
             <div className="col-sm-6">
-              <button type="button" onClick={previousPage}>Next</button>
+              <button className="tryout-button" type="button" onClick={previousPage}>Back</button>
             </div>
             <div className="col-sm-6">
-              <button type="submit">Next</button>
+              <button className="tryout-button" type="submit">Next</button>
             </div>
           </div>
         </div>
