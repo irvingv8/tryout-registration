@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import promise from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 
+import '../style/styles.css';
 import App from './Components/App';
 import reducers from './Reducers';
 
